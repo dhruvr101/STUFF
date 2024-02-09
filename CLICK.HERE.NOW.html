@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script> <!-- Include JavaScript file -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black; /* Set background color to black */
+            color: white; /* Set text color to white */
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: 100vh; /* Full viewport height */
+        }
+        #black-screen {
+            text-align: center;
+            padding: 20px; /* Reduced padding */
+        }
+        #changing-text {
+            font-size: 36px;
+            animation: changeColor1 3s infinite; /* Add animation to change text color */
+        }
+        #wifey-text {
+            font-size: 24px; /* Smaller font size */
+            animation: changeColor2 4s infinite; /* Add animation to change text color */
+        }
+        @keyframes changeColor1 {
+    0% { color: red; }
+    25% { color: blue; }
+    50% { color: yellow; }
+    75% { color: green; }
+    100% { color: purple; }
+}
+        @keyframes changeColor2 {
+            0% { color: orange; } /* Initial text color */
+            25% { color: pink; } /* Color change at 25% of the animation */
+            50% { color: purple; } /* Color change at 50% of the animation */
+            75% { color: cyan; } /* Color change at 75% of the animation */
+            100% { color: orange; } /* Return to initial text color */
+        }
+    </style>
+</head>
+<body>
+    <div id="black-screen">
+        <h1 id="changing-text">I Love My Girlfriend</h1>
+        <h2 id="wifey-text">Aka Wifey</h2>
+    </div>
+</body>
+</html>
